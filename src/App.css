@@ -1,0 +1,11 @@
+/* App.css */
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+.font-gloria {
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+}
