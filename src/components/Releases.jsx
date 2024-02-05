@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import man from "../assets/man.png"
 const Releases = () => {
     const [clickedBox1,setClickedBox1] = useState(false);
     const [clickedBox2,setClickedBox2] = useState(false);
@@ -20,7 +20,12 @@ const Releases = () => {
           You haven’t uploaded any videos with aBit yet. Add now!
         </div>
       </div>
-      <div onClick={()=>setClickedBox2(true)} className={`w-[283.64px] h-[312px] cursor-pointer bg-[url('public/static/img/man.png')] bg-center bg-cover rounded-[24px] relative overflow-hidden ${clickedBox2 ? 'animate-dissolve' : ''}`}>
+      <div onClick={()=>setClickedBox2(true)} className={`w-[283.64px] h-[312px] cursor-pointer rounded-[24px] relative overflow-hidden ${clickedBox2 ? 'animate-dissolve' : ''}`
+    }style={{
+      backgroundImage: `url(${man})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+    }}>
         <p className="p-4 text-nowrap w-[188px] h-[24px] font-bold text-[20px] leading-[24.2px] tracking-[-0.05em] text-[#FFFFFF] text-inter">
           The Sound of Silence
         </p>
